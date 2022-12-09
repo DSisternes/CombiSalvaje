@@ -1,4 +1,6 @@
 import 'package:combi_salvaje/routes/register.dart';
+import 'package:combi_salvaje/routes/user.dart';
+import 'package:combi_salvaje/routes/driver.dart';
 import 'package:flutter/material.dart';
 
 import 'login.dart';
@@ -100,6 +102,45 @@ class Home extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => const Register()),
+                        );
+                      },
+                    )
+                ),
+
+                Container(
+                    height: 50,
+                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    margin: const EdgeInsets.only(top: 20.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurple,
+                      ),
+                      child: const Text('Usuario',),
+                      onPressed: () {
+                        print(nameController.text);
+                        print(passwordController.text);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const User()),
+                        );
+                      },
+                    )
+                ),
+                Container(
+                    height: 50,
+                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    margin: const EdgeInsets.only(top: 20.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepPurple,
+                      ),
+                      child: const Text('Conductor',),
+                      onPressed: () {
+                        print(nameController.text);
+                        print(passwordController.text);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const Driver()),
                         );
                       },
                     )
