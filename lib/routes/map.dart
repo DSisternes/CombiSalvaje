@@ -193,5 +193,3 @@ class MapSampleState extends State<MapSample> {
     );
   }
 }
-
-
