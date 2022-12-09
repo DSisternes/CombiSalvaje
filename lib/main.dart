@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           '/login': (context) => const Login(),
           '/user': (context) => const User(),
           '/driver': (context) => const Driver(),
-          //'/map': (context) => const Map(),
+          '/map': (context) => const MapS(),
         },
     );
 
